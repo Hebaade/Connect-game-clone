@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameBoard {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.circles {
+    width: 330px;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 5px solid rgb(226, 179, 122);
+    background-color: bisque;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 10px;
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_1 {
+    background-color: red;
+}
+
+.player_2 {
+    background-color: green;
+}
+
+.player_0 {
+    background-color: white;
+}
+
+.panel {
+    background-color: lightgoldenrodyellow;
+    border: 5px solid rgb(226, 179, 122);
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    background-color: lightgoldenrodyellow;
+    border: 5px solid rgb(226, 179, 122);
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+    margin-top: 10px;
+}
+
+footer button {
+    background-color: rgba(41, 176, 209, 0.349);
+    padding: 7px 10px;
+    border: 3px solid rgb(226, 179, 122);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 18px;
+}
+
+footer button:hover {
+    background-color: rgb(226, 179, 122);
+}
